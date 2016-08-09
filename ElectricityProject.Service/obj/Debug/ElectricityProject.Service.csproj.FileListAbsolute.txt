@@ -1,0 +1,14 @@
+D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Service\obj\Debug\ElectricityProject.Service.csprojResolveAssemblyReference.cache
+D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Service\bin\Debug\ElectricityProject.Service.dll.config
+D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Service\bin\Debug\ElectricityProject.Service.dll
+D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Service\bin\Debug\ElectricityProject.Service.pdb
+D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Service\bin\Debug\DataLayer.dll
+D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Service\bin\Debug\ElectricityProject.Repository.dll
+D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Service\bin\Debug\EntityFramework.dll
+D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Service\bin\Debug\EntityFramework.SqlServer.dll
+D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Service\bin\Debug\DataLayer.pdb
+D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Service\bin\Debug\ElectricityProject.Repository.pdb
+D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Service\bin\Debug\EntityFramework.xml
+D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Service\bin\Debug\EntityFramework.SqlServer.xml
+D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Service\obj\Debug\ElectricityProject.Service.dll
+D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Service\obj\Debug\ElectricityProject.Service.pdb
