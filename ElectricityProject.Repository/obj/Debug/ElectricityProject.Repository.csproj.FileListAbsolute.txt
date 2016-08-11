@@ -10,3 +10,15 @@ D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Repository
 D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Repository\bin\Debug\DataLayer.dll
 D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Repository\bin\Debug\DataLayer.pdb
 D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\ElectricityProject.Repository\obj\Debug\ElectricityProject.Repository.csprojResolveAssemblyReference.cache
+D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\bin\Debug\ElectricityProject.Repository.dll.config
+D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\bin\Debug\ElectricityProject.Repository.dll
+D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\bin\Debug\ElectricityProject.Repository.pdb
+D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\bin\Debug\DataLayer.dll
+D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\bin\Debug\EntityFramework.dll
+D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\bin\Debug\DataLayer.pdb
+D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\bin\Debug\EntityFramework.xml
+D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\obj\Debug\ElectricityProject.Repository.csprojResolveAssemblyReference.cache
+D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\obj\Debug\ElectricityProject.Repository.dll
+D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\obj\Debug\ElectricityProject.Repository.pdb

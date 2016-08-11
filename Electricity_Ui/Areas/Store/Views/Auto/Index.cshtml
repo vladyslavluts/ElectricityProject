@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        Store / Auto Entered
+        <br/>@Html.ActionLink("Переход в другую страницу этой же области с другим контроллером", "Index", "Index", new { id = 10 }, null)
+        <br /> @Html.ActionLink("Переход в другую область с другим контроллером", "Index", new { area = "Roles", controller = "Index" })
+
+    </div>
+</body>
+</html>

@@ -8,3 +8,13 @@ D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\DataLayer\bin\Debug\EntityFra
 D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\DataLayer\obj\Debug\ElectricityProject.DataLayer.csprojResolveAssemblyReference.cache
 D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\DataLayer\obj\Debug\DataLayer.dll
 D:\ASP.NET\Diploma\GoogleUpdate\ElectricityProject\DataLayer\obj\Debug\DataLayer.pdb
+D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\bin\Debug\DataLayer.dll.config
+D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\bin\Debug\DataLayer.dll
+D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\bin\Debug\DataLayer.pdb
+D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\bin\Debug\EntityFramework.dll
+D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\bin\Debug\EntityFramework.xml
+D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\obj\Debug\ElectricityProject.DataLayer.csprojResolveAssemblyReference.cache
+D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\obj\Debug\DataLayer.dll
+D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\obj\Debug\DataLayer.pdb
