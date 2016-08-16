@@ -18,6 +18,8 @@ namespace ElectricityProject.DataLayer.DbLayer
         public virtual DbSet<StreetPrefix> StreetPrefixes { get; set; }
         public virtual DbSet<Subdivision> Subdivisions { get; set; }
         public virtual DbSet<TypeBuilding> TypeBuildings { get; set; }
+        public virtual DbSet<Company> Companies { get; set; }
+        public virtual DbSet<CompanyTelephon> CompanyTelephons { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -52,6 +54,58 @@ namespace ElectricityProject.DataLayer.DbLayer
                 .HasMany(e => e.Buildings)
                 .WithRequired(e => e.TypeBuilding)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Company>()
+                .Property(e => e.CompanyName)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Company>()
+                .Property(e => e.CompanyNameFull)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Company>()
+                .Property(e => e.ReestrArendator)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Company>()
+                .Property(e => e.PositionManager)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Company>()
+                .Property(e => e.Manager)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Company>()
+                .Property(e => e.LegalAddress)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Company>()
+                .Property(e => e.Edrpou)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Company>()
+                .Property(e => e.NumberPlat)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Company>()
+                .Property(e => e.Svid)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Company>()
+                .Property(e => e.PostalAddress)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Company>()
+                .Property(e => e.PostalIndex)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<CompanyTelephon>()
+                .Property(e => e.Number)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<CompanyTelephon>()
+                .Property(e => e.FullNumber)
+                .IsUnicode(false);
         }
     }
 }

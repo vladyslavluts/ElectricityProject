@@ -18,3 +18,5 @@ D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\bin\Debug\EntityFramework.Sq
 D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\obj\Debug\ElectricityProject.DataLayer.csprojResolveAssemblyReference.cache
 D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\obj\Debug\DataLayer.dll
 D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\obj\Debug\DataLayer.pdb
+D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\bin\Debug\aspnet-Electricity_Ui-20160811050333.mdf
+D:\ASP.NET\Diploma\Git\ElectricityProject\DataLayer\bin\Debug\aspnet-Electricity_Ui-20160811050333_log.ldf

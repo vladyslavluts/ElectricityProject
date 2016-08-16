@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ElectricityProject.Service.Services
 {
-    class StreetPrefixRepository : GenericRepository<StreetPrefix>
+    public class StreetPrefixRepository : GenericRepository<StreetPrefix>
     {
         public StreetPrefixRepository(DbContext context) : base(context)
         {

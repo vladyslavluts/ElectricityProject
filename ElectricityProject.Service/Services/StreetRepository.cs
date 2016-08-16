@@ -5,7 +5,7 @@ using System.Data.Entity;
 
 namespace ElectricityProject.Service.Services
 {
-    class StreetRepository : GenericRepository<StreetPrefix>
+    public class StreetRepository : GenericRepository<StreetPrefix>
     {
         public StreetRepository(DbContext context) : base(context)
         {

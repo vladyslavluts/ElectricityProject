@@ -5,7 +5,7 @@ using System.Data.Entity;
 
 namespace ElectricityProject.Service.Services
 {
-    class TypeBuildingRepository : GenericRepository<TypeBuilding>
+    public class TypeBuildingRepository : GenericRepository<TypeBuilding>
     {
         public TypeBuildingRepository(DbContext context) : base(context)
         {

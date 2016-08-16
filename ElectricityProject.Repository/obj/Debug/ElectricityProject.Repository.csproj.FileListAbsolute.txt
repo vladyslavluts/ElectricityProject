@@ -22,3 +22,5 @@ D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\bin\Debu
 D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\obj\Debug\ElectricityProject.Repository.csprojResolveAssemblyReference.cache
 D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\obj\Debug\ElectricityProject.Repository.dll
 D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\obj\Debug\ElectricityProject.Repository.pdb
+D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\bin\Debug\aspnet-Electricity_Ui-20160811050333.mdf
+D:\ASP.NET\Diploma\Git\ElectricityProject\ElectricityProject.Repository\bin\Debug\aspnet-Electricity_Ui-20160811050333_log.ldf

@@ -5,7 +5,7 @@ using System.Data.Entity;
 
 namespace ElectricityProject.Service.Services
 {
-    class AddressPlanRepository : GenericRepository<AddressPlan>
+    public class AddressPlanRepository : GenericRepository<AddressPlan>
     {
         public AddressPlanRepository(DbContext context) : base (context){ }
 
