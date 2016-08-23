@@ -1,40 +1,27 @@
-﻿using ElectricityProject.DataLayer.DbLayer;
-using ElectricityProject.Repository.Repositories;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using ElectricityProject.DataLayer.DbLayer;
+using Electricity_Ui.Models;
 
 namespace Electricity_Ui.Areas.Store.Controllers
 {
-    public class AddressPlanController : Controller
+    public class AddressPlans2Controller : Controller
     {
-        // GET: Store/AdressPlan
+        private ApplicationDbContext db = new ApplicationDbContext();
+
+        // GET: Store/AddressPlans
         public ActionResult Index()
         {
-            return View();
-        }
-        IGenericRepository<AddressPlan> adrPlan;
-         IGenericRepository<Street> street;
-         IGenericRepository<Subdivision> subdivision;
-
-        public AddressPlanController(
-            IGenericRepository<AddressPlan> adrPlan, 
-            IGenericRepository<Street> street, 
-            IGenericRepository<Subdivision> subdivision)
-        {
-            this.street = street;
-            this.subdivision = subdivision;
-            this.adrPlan = adrPlan;
-        }
-        //GET: Store/Auto/TableEdit/AddressPlan
-        public ActionResult IndexTable(string TableName = "AddressPlan")
-        {
-            var model = adrPlan.GetAll();
-            return View(model);
+            var addressPlans = db.AddressPlans.Include(a => a.Street).Include(a => a.Subdivision);
+            return View(addressPlans.ToList());
+            // var model = db.AddressPlans.GetAll();
+            // return View(model);
         }
 
         // GET: Store/AddressPlans/Details/5
@@ -44,20 +31,19 @@ namespace Electricity_Ui.Areas.Store.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            var addressPlan = adrPlan.Get((int)id);
+            AddressPlan addressPlan = db.AddressPlans.Find(id);
             if (addressPlan == null)
             {
                 return HttpNotFound();
             }
             return View(addressPlan);
         }
+
         // GET: Store/AddressPlans/Create
         public ActionResult Create()
         {
-            //  var addressPlan = adrPlan.GetAll();
-            // var street = new IGenericRepository<Street>;
-             ViewBag.StreetId = new SelectList(street.GetAll(), "StreetId", "StreetName");
-            ViewBag.SubdivisionId = new SelectList(subdivision.GetAll(), "SubdivisionId", "SubdivisionName");
+            ViewBag.StreetId = new SelectList(db.Streets, "StreetId", "StreetName");
+            ViewBag.SubdivisionId = new SelectList(db.Subdivisions, "SubdivisionId", "SubdivisionName");
             return View();
         }
 
@@ -70,16 +56,15 @@ namespace Electricity_Ui.Areas.Store.Controllers
         {
             if (ModelState.IsValid)
             {
-                adrPlan.AddOrUpdate(addressPlan);
-                // adrPlan.SaveChanges();
-                return RedirectToAction("IndexTable");
+                db.AddressPlans.Add(addressPlan);
+                db.SaveChanges();
+                return RedirectToAction("Index");
             }
 
-            ViewBag.StreetId = new SelectList(street.GetAll(), "StreetId", "StreetName", addressPlan.StreetId);
-            ViewBag.SubdivisionId = new SelectList(subdivision.GetAll(), "SubdivisionId", "SubdivisionName", addressPlan.SubdivisionId);
+            ViewBag.StreetId = new SelectList(db.Streets, "StreetId", "StreetName", addressPlan.StreetId);
+            ViewBag.SubdivisionId = new SelectList(db.Subdivisions, "SubdivisionId", "SubdivisionName", addressPlan.SubdivisionId);
             return View(addressPlan);
         }
-
 
         // GET: Store/AddressPlans/Edit/5
         public ActionResult Edit(int? id)
@@ -88,13 +73,13 @@ namespace Electricity_Ui.Areas.Store.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            AddressPlan addressPlan = adrPlan.Get((int)id);
+            AddressPlan addressPlan = db.AddressPlans.Find(id);
             if (addressPlan == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.StreetId = new SelectList(street.GetAll(), "StreetId", "StreetName", addressPlan.StreetId);
-            ViewBag.SubdivisionId = new SelectList(subdivision.GetAll(), "SubdivisionId", "SubdivisionName", addressPlan.SubdivisionId);
+            ViewBag.StreetId = new SelectList(db.Streets, "StreetId", "StreetName", addressPlan.StreetId);
+            ViewBag.SubdivisionId = new SelectList(db.Subdivisions, "SubdivisionId", "SubdivisionName", addressPlan.SubdivisionId);
             return View(addressPlan);
         }
 
@@ -107,12 +92,12 @@ namespace Electricity_Ui.Areas.Store.Controllers
         {
             if (ModelState.IsValid)
             {
-                // addressPlan.Entry(addressPlan).State = EntityState.Modified;
-                adrPlan.AddOrUpdate(addressPlan);
-                return RedirectToAction("IndexTable");
+                db.Entry(addressPlan).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
             }
-            ViewBag.StreetId = new SelectList(street.GetAll(), "StreetId", "StreetName", addressPlan.StreetId);
-            ViewBag.SubdivisionId = new SelectList(subdivision.GetAll(), "SubdivisionId", "SubdivisionName", addressPlan.SubdivisionId);
+            ViewBag.StreetId = new SelectList(db.Streets, "StreetId", "StreetName", addressPlan.StreetId);
+            ViewBag.SubdivisionId = new SelectList(db.Subdivisions, "SubdivisionId", "SubdivisionName", addressPlan.SubdivisionId);
             return View(addressPlan);
         }
 
@@ -123,8 +108,7 @@ namespace Electricity_Ui.Areas.Store.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-
-            AddressPlan addressPlan = adrPlan.Get((int)id);
+            AddressPlan addressPlan = db.AddressPlans.Find(id);
             if (addressPlan == null)
             {
                 return HttpNotFound();
@@ -137,9 +121,19 @@ namespace Electricity_Ui.Areas.Store.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            AddressPlan addressPlan = adrPlan.Get((int)id);
-            adrPlan.Delete(addressPlan);
-            return RedirectToAction("IndexTable");
+            AddressPlan addressPlan = db.AddressPlans.Find(id);
+            db.AddressPlans.Remove(addressPlan);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
         }
     }
 }

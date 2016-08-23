@@ -1,0 +1,35 @@
+﻿@model ElectricityProject.DataLayer.DbLayer.StreetPrefix
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StreetPrefix</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StreetPrefixName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StreetPrefixName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsAfter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsAfter)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.StreetPrefixId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

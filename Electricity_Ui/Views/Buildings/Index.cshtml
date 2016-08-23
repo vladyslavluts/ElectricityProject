@@ -1,0 +1,118 @@
+﻿@model IEnumerable<ElectricityProject.DataLayer.DbLayer.Building>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AddressPlan.House)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TypeBuilding.TypeBuildingName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YearConstruction)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CountFloors)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SerialBuilding)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaterialsWall)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaterialsWallString)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsAccounting)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsPlumbing)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsSewerage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsHeating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsHotWater)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsGas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Balanse)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Iznos)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AddressPlan.House)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TypeBuilding.TypeBuildingName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YearConstruction)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CountFloors)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SerialBuilding)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaterialsWall)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaterialsWallString)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsAccounting)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsPlumbing)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsSewerage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsHeating)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsHotWater)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsGas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Balanse)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Iznos)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.BuildingId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.BuildingId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.BuildingId })
+        </td>
+    </tr>
+}
+
+</table>

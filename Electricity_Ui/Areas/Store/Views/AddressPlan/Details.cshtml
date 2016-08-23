@@ -1,0 +1,91 @@
+﻿@model ElectricityProject.DataLayer.DbLayer.AddressPlan
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AddressPlan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Street.StreetName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Street.StreetName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subdivision.SubdivisionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subdivision.SubdivisionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyServiceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyServiceId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.House)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.House)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Longitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsAccounting)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsAccounting)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodePostal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodePostal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.remarks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.remarks)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AddressPlanId }) |
+    @Html.ActionLink("Back to List", "IndexTable")
+</p>

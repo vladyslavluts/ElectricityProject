@@ -191,12 +191,21 @@
     <Compile Include="Areas\Roles\Controllers\IndexController.cs" />
     <Compile Include="Areas\Roles\RolesAreaRegistration.cs" />
     <Compile Include="Areas\Store\Controllers\AddressPlanController.cs" />
+    <Compile Include="Areas\Store\Controllers\AddressPlans2Controller.cs" />
     <Compile Include="Areas\Store\Controllers\AutoController.cs" />
+    <Compile Include="Areas\Store\Controllers\Buildings2Controller.cs" />
     <Compile Include="Areas\Store\Controllers\IndexController.cs" />
     <Compile Include="Areas\Store\StoreAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AddressPlansController.cs" />
+    <Compile Include="Controllers\BuildingsController.cs" />
+    <Compile Include="Controllers\CompaniesController.cs" />
+    <Compile Include="Controllers\CompanyTelephonsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\StreetPrefixesController.cs" />
+    <Compile Include="Controllers\SubdivisionsController.cs" />
+    <Compile Include="Controllers\TypeBuildingsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -222,7 +231,21 @@
     <Content Include="Areas\Store\Views\Index\Index.cshtml" />
     <Content Include="Areas\Roles\Views\web.config" />
     <Content Include="Areas\Roles\Views\Index\Index.cshtml" />
-    <Content Include="Areas\Store\Views\AddressPlan\TableEdit.cshtml" />
+    <Content Include="Areas\Store\Views\AddressPlan\IndexTable.cshtml" />
+    <Content Include="Areas\Store\Views\AddressPlans\Create.cshtml" />
+    <Content Include="Areas\Store\Views\AddressPlans\Delete.cshtml" />
+    <Content Include="Areas\Store\Views\AddressPlans\Details.cshtml" />
+    <Content Include="Areas\Store\Views\AddressPlans\Edit.cshtml" />
+    <Content Include="Areas\Store\Views\AddressPlans\Index.cshtml" />
+    <Content Include="Areas\Store\Views\AddressPlan\Details.cshtml" />
+    <Content Include="Areas\Store\Views\AddressPlan\Create.cshtml" />
+    <Content Include="Areas\Store\Views\AddressPlan\Edit.cshtml" />
+    <Content Include="Areas\Store\Views\AddressPlan\Delete.cshtml" />
+    <Content Include="Areas\Store\Views\Buildings\Create.cshtml" />
+    <Content Include="Areas\Store\Views\Buildings\Delete.cshtml" />
+    <Content Include="Areas\Store\Views\Buildings\Details.cshtml" />
+    <Content Include="Areas\Store\Views\Buildings\Edit.cshtml" />
+    <Content Include="Areas\Store\Views\Buildings\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -269,6 +292,41 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Companies\Create.cshtml" />
+    <Content Include="Views\Companies\Delete.cshtml" />
+    <Content Include="Views\Companies\Details.cshtml" />
+    <Content Include="Views\Companies\Edit.cshtml" />
+    <Content Include="Views\Companies\Index.cshtml" />
+    <Content Include="Views\Buildings\Create.cshtml" />
+    <Content Include="Views\Buildings\Delete.cshtml" />
+    <Content Include="Views\Buildings\Details.cshtml" />
+    <Content Include="Views\Buildings\Edit.cshtml" />
+    <Content Include="Views\Buildings\Index.cshtml" />
+    <Content Include="Views\AddressPlans\Create.cshtml" />
+    <Content Include="Views\AddressPlans\Delete.cshtml" />
+    <Content Include="Views\AddressPlans\Details.cshtml" />
+    <Content Include="Views\AddressPlans\Edit.cshtml" />
+    <Content Include="Views\AddressPlans\Index.cshtml" />
+    <Content Include="Views\CompanyTelephons\Create.cshtml" />
+    <Content Include="Views\CompanyTelephons\Delete.cshtml" />
+    <Content Include="Views\CompanyTelephons\Details.cshtml" />
+    <Content Include="Views\CompanyTelephons\Edit.cshtml" />
+    <Content Include="Views\CompanyTelephons\Index.cshtml" />
+    <Content Include="Views\StreetPrefixes\Create.cshtml" />
+    <Content Include="Views\StreetPrefixes\Delete.cshtml" />
+    <Content Include="Views\StreetPrefixes\Details.cshtml" />
+    <Content Include="Views\StreetPrefixes\Edit.cshtml" />
+    <Content Include="Views\StreetPrefixes\Index.cshtml" />
+    <Content Include="Views\Subdivisions\Create.cshtml" />
+    <Content Include="Views\Subdivisions\Delete.cshtml" />
+    <Content Include="Views\Subdivisions\Details.cshtml" />
+    <Content Include="Views\Subdivisions\Edit.cshtml" />
+    <Content Include="Views\Subdivisions\Index.cshtml" />
+    <Content Include="Views\TypeBuildings\Create.cshtml" />
+    <Content Include="Views\TypeBuildings\Delete.cshtml" />
+    <Content Include="Views\TypeBuildings\Details.cshtml" />
+    <Content Include="Views\TypeBuildings\Edit.cshtml" />
+    <Content Include="Views\TypeBuildings\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -276,6 +334,7 @@
     <Folder Include="Areas\Roles\Views\Shared\" />
     <Folder Include="Areas\Store\Models\" />
     <Folder Include="Areas\Store\Views\AdressPlan\" />
+    <Folder Include="Areas\Store\Views\New\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

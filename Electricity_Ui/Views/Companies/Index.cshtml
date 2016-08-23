@@ -1,0 +1,64 @@
+﻿@model IEnumerable<ElectricityProject.DataLayer.DbLayer.Company>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ReestrArendator)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PositionManager)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Manager)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumberPlat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Svid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BankId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReestrArendator)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PositionManager)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Manager)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberPlat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Svid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BankId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

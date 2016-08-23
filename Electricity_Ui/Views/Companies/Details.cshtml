@@ -1,0 +1,67 @@
+﻿@model ElectricityProject.DataLayer.DbLayer.Company
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Company</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ReestrArendator)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReestrArendator)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PositionManager)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PositionManager)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manager)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manager)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberPlat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberPlat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Svid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Svid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

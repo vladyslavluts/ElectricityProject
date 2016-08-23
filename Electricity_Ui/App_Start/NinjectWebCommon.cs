@@ -67,7 +67,10 @@ namespace Electricity_Ui.App_Start
             {
                 kernel.Bind<DbContext>().To<DBContext>().InRequestScope();
                 kernel.Bind<IGenericRepository<AddressPlan>>().To<AddressPlanRepository>().InRequestScope();
-            }
+                kernel.Bind<IGenericRepository<Street>>().To<StreetRepository>().InRequestScope();
+                kernel.Bind<IGenericRepository<Subdivision>>().To<SubdivisionRepository>().InRequestScope();
+
+        }
 
     }
 }

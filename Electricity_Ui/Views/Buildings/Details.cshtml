@@ -1,0 +1,139 @@
+﻿@model ElectricityProject.DataLayer.DbLayer.Building
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Building</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AddressPlan.House)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddressPlan.House)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeBuilding.TypeBuildingName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeBuilding.TypeBuildingName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearConstruction)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearConstruction)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CountFloors)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountFloors)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SerialBuilding)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SerialBuilding)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaterialsWall)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaterialsWall)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaterialsWallString)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaterialsWallString)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsAccounting)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsAccounting)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsPlumbing)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsPlumbing)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsSewerage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsSewerage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsHeating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsHeating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsHotWater)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsHotWater)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsGas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsGas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Balanse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Balanse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Iznos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Iznos)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BuildingId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

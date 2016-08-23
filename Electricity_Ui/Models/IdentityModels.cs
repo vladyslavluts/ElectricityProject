@@ -29,5 +29,15 @@ namespace Electricity_Ui.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ElectricityProject.DataLayer.DbLayer.AddressPlan> AddressPlans { get; set; }
+
+        public System.Data.Entity.DbSet<ElectricityProject.DataLayer.DbLayer.Street> Streets { get; set; }
+
+        public System.Data.Entity.DbSet<ElectricityProject.DataLayer.DbLayer.Subdivision> Subdivisions { get; set; }
+
+        public System.Data.Entity.DbSet<ElectricityProject.DataLayer.DbLayer.Building> Buildings { get; set; }
+
+        public System.Data.Entity.DbSet<ElectricityProject.DataLayer.DbLayer.TypeBuilding> TypeBuildings { get; set; }
     }
 }
