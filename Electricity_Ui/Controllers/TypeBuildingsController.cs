@@ -10,6 +10,7 @@ using ElectricityProject.DataLayer.DbLayer;
 
 namespace Electricity_Ui.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class TypeBuildingsController : Controller
     {
         private DBContext db = new DBContext();
